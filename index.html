@@ -8,9 +8,14 @@
   </body>
   <script>
     const center = document.querySelector('center');
-    for(i = 0; i < 16; i++){
+    const container = document.createElement('div');
+    container.classList.add('container');
+    center.appendChild(container);
+    for(let i = 0; i < 16; i++){
       let div = document.createElement('div');
-      center.appendChild(div)
+      div.classList.add('grid');
+      div.setAttribute('id', '' + i);
+      container.appendChild(div);
     }
 
   </script>
