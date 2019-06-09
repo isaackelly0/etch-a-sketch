@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>etch-a-sketch</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-    <center>
-    </center>
   </body>
   <script>
-    const center = document.querySelector('center');
+    const body = document.querySelector('body');
     const container = document.createElement('div');
     container.classList.add('container');
-    center.appendChild(container);
+    body.appendChild(container);
     for(let i = 0; i < 256; i++){
       let div = document.createElement('div');
       div.classList.add('grid');
       div.setAttribute('id', '' + i);
+      div.textContent = 'grid';
       container.appendChild(div);
     }
 
