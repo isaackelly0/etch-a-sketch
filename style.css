@@ -1,9 +1,10 @@
 .container {
   display:flex;
+  
 }
 .grid{
 
 }
 .frame{
-  
+  padding: 5px;
 }
