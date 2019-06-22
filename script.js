@@ -22,4 +22,4 @@ function set(x){
     container.appendChild(grid);
   }
 }
-set(16);//call to set initial size of grid
+set(25);//call to set initial size of grid
