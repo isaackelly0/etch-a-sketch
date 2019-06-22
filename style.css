@@ -1,9 +1,9 @@
 .container {
   display:flex;
-  
+  padding-left: 10px;
 }
 .grid{
-
+  background-color: red;
 }
 .frame{
   padding: 5px;
