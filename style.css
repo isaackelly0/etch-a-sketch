@@ -1,12 +1,16 @@
 .container {
   display:flex;
-  padding-left: 600px;
+  /*padding-left: 600px;*/
+  justify-content: center;
   padding-top: 100px;
 }
 .frame{
   padding: 20px;
-  background-color: blue;
+  background-color: white;
 }
 .sketch{
   background-color: black;
+}
+body{
+  background-color: red;
 }
