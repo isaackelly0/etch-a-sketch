@@ -1,10 +1,12 @@
 .container {
   display:flex;
-  padding-left: 10px;
-}
-.grid{
-  background-color: red;
+  padding-left: 600px;
+  padding-top: 100px;
 }
 .frame{
-  padding: 5px;
+  padding: 20px;
+  background-color: blue;
+}
+.sketch{
+  background-color: black;
 }

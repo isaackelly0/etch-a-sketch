@@ -10,7 +10,7 @@ for(let i = 0; i < 16; i++){
     for(let j = 0; j < 16; j++){
       let frame = document.createElement('div');
       frame.classList.add('frame');
-      frame.textContent = '' + j;
+      //frame.textContent = '' + j;
       grid.appendChild(frame);
     }
   container.appendChild(grid);
