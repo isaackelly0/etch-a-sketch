@@ -1,5 +1,6 @@
 const body = document.querySelector('center');
 const container = document.createElement('div');
+const reset = document.querySelector('#reset');
 container.classList.add('container');
 body.appendChild(container);
 function set(x){
@@ -23,3 +24,6 @@ function set(x){
   }
 }
 set(25);//call to set initial size of grid
+reset.addEventListener('click', function(){
+
+});
