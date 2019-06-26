@@ -25,5 +25,5 @@ function set(x){
 }
 set(25);//call to set initial size of grid
 reset.addEventListener('click', function(){
-
+  
 });
