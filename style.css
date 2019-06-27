@@ -1,11 +1,17 @@
 .container {
   display:flex;
-  /*padding-left: 600px;*/
   justify-content: center;
   padding-top: 100px;
+  margin:auto;
+  /*width: 650px;
+  height: 650px;*/
+}
+.grid{
+  max-width: 650px;
 }
 .frame{
-  padding: 15px;
+  max-height: 650px;
+  padding: 10px;
   background-color: white;
 }
 .sketch{
