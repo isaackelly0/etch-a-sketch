@@ -1,18 +1,14 @@
 .container {
-  display:flex;
-  justify-content: center;
-  padding-top: 100px;
-  margin:auto;
+  display:grid;
+  background-color: blue;
   width: 650px;
   height: 650px;
-  border-color: black;
+  margin-top: 10px;
 }
 .grid{
-}
-.frame{
-  padding: 10px;
   background-color: white;
 }
+
 .sketch{
   background-color: black;
 }
