@@ -1,14 +1,32 @@
 const body = document.querySelector('center');
 const container = document.createElement('div');
 const reset = document.querySelector('#reset');
-var gridSize;
 container.classList.add('container');
 body.appendChild(container);
-function set(gridSize){
-  //create grid
-
+function set(x){
+  //create grid columns
+  for(let i = 0; i < x; i++){
+    let grid = document.createElement('div');
+    grid.classList.add('grid');
+    grid.setAttribute('id', '' + i);
+    //grid.textContent = 'grid';
+    //create grid
+      for(let j = 0; j < x; j++){
+        let frame = document.createElement('div');
+        frame.classList.add('frame');
+        frame.style.height = (480 / x) + "px";
+        frame.style.width = (480 / x) + "px";
+        //frame.textContent = '' + j;
+        frame.addEventListener('mouseover', function(){
+          frame.classList.add('sketch')
+        })
+        grid.appendChild(frame);
+      }
+    container.appendChild(grid);
+  }
 }
-//set(25);//call to set initial size of grid
+set(25)
+
 reset.addEventListener('click', function(){
   //loop to erase the grid
   let child = container.lastElementChild
