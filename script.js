@@ -1,4 +1,4 @@
-const body = document.querySelector('center');
+const body = document.querySelector('body');
 const container = document.createElement('div');
 const reset = document.querySelector('#reset');
 container.classList.add('container');
@@ -14,6 +14,8 @@ function set(x){
       for(let j = 0; j < x; j++){
         let frame = document.createElement('div');
         frame.classList.add('frame');
+        //find a way to autopad
+        //frame.style.padding = (55 - x) +"px"
         //frame.textContent = '' + j;
         frame.addEventListener('mouseover', function(){
           frame.classList.add('sketch')
@@ -23,7 +25,7 @@ function set(x){
     container.appendChild(grid);
   }
 }
-set(25);//call to set initial size of grid
+set(50);//call to set initial size of grid
 reset.addEventListener('click', function(){
   //loop to erase the grid
   let child = container.lastElementChild
