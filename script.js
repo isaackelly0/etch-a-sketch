@@ -4,19 +4,19 @@ const reset = document.querySelector('#reset');
 container.classList.add('container');
 body.appendChild(container);
 function set(x){
-  //create grid columns
+  //create grid rows
   for(let i = 0; i < x; i++){
     let grid = document.createElement('div');
     grid.classList.add('grid');
     grid.setAttribute('id', '' + i);
-    //grid.textContent = 'grid';
-    //create grid
+    //create grid cells
       for(let j = 0; j < x; j++){
         let frame = document.createElement('div');
+        //add class and size attributes
         frame.classList.add('frame');
-        frame.style.height = (480 / x) + "px";
-        frame.style.width = (480 / x) + "px";
-        //frame.textContent = '' + j;
+        frame.style.height = (600 / x) + "px";
+        frame.style.width = (600 / x) + "px";
+        //create hover function to change color
         frame.addEventListener('mouseover', function(){
           frame.classList.add('sketch')
         })
@@ -25,7 +25,7 @@ function set(x){
     container.appendChild(grid);
   }
 }
-set(25)
+set(64)
 
 reset.addEventListener('click', function(){
   //loop to erase the grid

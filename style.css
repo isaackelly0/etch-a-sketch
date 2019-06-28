@@ -1,16 +1,16 @@
 .container {
   display:grid;
-  width: 650px;
-  height: 650px;
+  /*width: 650px;
+  height: 650px;*/
   margin-top: 20px;
+  grid-gap: 0;
 }
 .frame{
   background-color: white;
   display: inline-grid;
 }
 .grid{
-  margin: 0;
-  padding-bottom: 0;
+  margin-bottom: -8px;
 }
 .sketch{
   background-color: black;
