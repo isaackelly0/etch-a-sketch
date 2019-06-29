@@ -1,7 +1,7 @@
 .container {
   display:grid;
-  /*width: 650px;
-  height: 650px;*/
+  width: 960px;
+  height: 960px;
   margin-top: 20px;
   grid-gap: 0;
 }
@@ -10,7 +10,7 @@
   display: inline-grid;
 }
 .grid{
-  margin-bottom: -8px;
+  /*margin-bottom: -8px;*/
 }
 .sketch{
   background-color: black;
