@@ -42,6 +42,7 @@ set(gridSize, colorChange);
 
 reset.addEventListener('click', function(){
   //loop to erase the grid
+
   let newGrid = prompt("Insert a number between 1-100 to resize grid");
   //make sure no strings are entered in place of numbers
   try{
@@ -53,7 +54,7 @@ reset.addEventListener('click', function(){
         container.removeChild(child);
         child = container.lastElementChild;
       }
-      set(gridSize);//reset grid to initial size
+      set(gridSize, colorChange);//reset grid to initial size
     }
     else{
       alert('This is outside the number range, try again')
